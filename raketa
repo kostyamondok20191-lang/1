@@ -1,0 +1,9 @@
+import time
+
+print("ракета взлітає через")
+countdown = 3
+while countdown > 0: 
+    print(str(countdown) + "...")
+    time.sleep(1)
+    countdown = countdown - 1
+print("поїхали")
