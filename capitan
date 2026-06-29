@@ -1,0 +1,2 @@
+capitan_name =input("Введіть ім'я капітана: ")
+print("Корабель готовий до старту " + capitan_name + " !")
