@@ -1,0 +1,23 @@
+import time 
+
+def space_alarm():
+    print("НЕБЕЗПЕКА!")
+
+capitan_name =input("Введіть ім'я капітана: ")
+print("Корабель готовий до старту " + capitan_name + " !")
+countdown = 3
+while countdown > 0: 
+    print(str(countdown) + "...")
+    time.sleep(1)
+    countdown = countdown - 1
+print("поїхали")
+items = ["лазер", "щит", "мапа"]
+print("Перевірка інструментів:")
+for item in items:
+    print(item + " готово до використання")
+    time.sleep(1)
+
+choice = input("Попереду астероїд! Що робити? (1 - Стріляти 2 - облетіти): ")
+if choice == "1": print("ви попали на іншу планету")
+else: print("ви облетіли сонячну систему ")
+print("гра закінчена")
