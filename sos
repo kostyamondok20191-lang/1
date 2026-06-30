@@ -1,0 +1,8 @@
+def space_alarm():
+    print("НЕБЕЗПЕКА!")
+    choice = input("Відкрити парашут? (Так/ні):")
+
+choice = input("Відкрити парашут? (Так/ні):")
+if choice == "ні": space_alarm()
+if choice == "Так": print("Ви спаслись")
+else: print("Ви померли!")
