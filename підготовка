@@ -1,0 +1,6 @@
+import time 
+items = ["мотузка", "мило", "люстра"]
+print("Перевірка інструментів:")
+for item in items:
+    print(item + " готові до використання")
+    time.sleep(1)
