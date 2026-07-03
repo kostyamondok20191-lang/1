@@ -1,0 +1,12 @@
+import random
+
+def roll_dice():
+    random_number = random.randint(1, 6)
+
+    choice = input("хочете кинути кубік? (Так/ні):")
+    if choice == "Так": 
+        print(f"випадкове число: {random_number}")
+        roll_dice()
+    else: print("кінець")
+    
+roll_dice()
