@@ -1,9 +1,22 @@
-n = int(input("Введіть n:"))
+def faktorial():
+    n = int(input("Введіть n:"))
+    hart = 1
 
-hart = 1
+    if (n < 1):
+        raise Exception("Занизьке значення n")
 
-for i in range(1, n + 1):
-    print("i = " + str(i))
-    hart = hart * i
+    for i in range(1, n + 1):
+        print("i = " + str(i))
+        hart = hart * i
 
-print("Результат складного алгоритму факторіалу: ", hart)
+    print("Результат складного алгоритму факторіалу: ", hart)
+
+
+def try_factorial():
+    try:
+        faktorial()
+    except:
+        print("Неправильний ввід. Спробуйте знову.")
+        try_factorial()
+
+try_factorial()
