@@ -3,7 +3,7 @@ def faktorial():
     hart = 1
 
     if (n < 1):
-        raise Exception("Занизьке значення n")
+        raise Exception()
 
     for i in range(1, n + 1):
         print("i = " + str(i))

@@ -4,5 +4,5 @@ def space_alarm():
 
 choice = input("Відкрити парашут? (Так/ні):")
 if choice == "ні": space_alarm()
-if choice == "Так": print("Ви спаслись")
+elif choice == "Так": print("Ви спаслись")
 else: print("Ви померли!")

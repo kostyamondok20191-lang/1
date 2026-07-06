@@ -1,0 +1,18 @@
+import random
+
+x = random.randint(1, 100)
+print("X = " + str(x))
+def namber():
+    y = int(input("Введіть число: "))
+    if  x > y:
+        print("Рандомне число більше")
+        namber()
+    elif x < y:
+        print("Рандомне число менше")
+        namber()
+    elif x == y: print("Ви вгадали число")
+    else:
+        print("Неправильний ввід. Спробуйте знову.")
+        namber()
+
+namber()
