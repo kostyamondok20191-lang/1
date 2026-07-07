@@ -1,0 +1,40 @@
+def produkt_def():
+    produkt =input("Введіть назву товара: (кола/кава/чай/фанта.):")
+    cena = 0 
+    if produkt == "кола": cena = 20
+
+    elif produkt == "кава": cena = 15
+
+    elif produkt == "чай": cena = 30
+
+    elif produkt == "фанта": cena = 25
+
+    else: 
+        print("нема цього товара спробуйте знову.")
+        produkt_def()
+
+    return(cena)
+
+
+cena = produkt_def()
+
+print("cena = ", cena )
+
+many =int(input("Введіть кількість грошей: "))
+if many == many>=cena: 
+    zdacha = many - cena
+    print("видача товара")
+    print("видача купюр по 200", zdacha // 200)
+    zdacha_1 = zdacha % 200
+    print("видача купюр по 100", zdacha_1 // 100)
+    zdacha_2 = zdacha_1 % 100
+    print("видача купюр по 50", zdacha_2 // 50)
+    zdacha_3 = zdacha_2 % 50
+    print("видача купюр по 20", zdacha_3 // 20)
+    zdacha_4 = zdacha_3 % 20
+    print("видача купюр по 10", zdacha_4 // 10)
+    zdacha_5 = zdacha_4 % 10
+    print("видача купюр по 5", zdacha_5 // 5)
+    zdacha_6 = zdacha_5 % 5
+    print("видача купюр по 1", zdacha_6 // 1)
+else: print("дайте більшу сумму!")
